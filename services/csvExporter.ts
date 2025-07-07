@@ -154,7 +154,7 @@ export const exportDataAsCsv = (data: AppData, inepCode: string): void => {
     const blob = new Blob([BOM + csv], { type: 'text/csv;charset=utf-8;' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = `onboarding_preenchido_${new Date().toISOString().split('T')[0]}.csv`;
+    link.download = `onboarding_preenchido_${inepCode}_${new Date().toISOString().split('T')[0]}.csv`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
