@@ -1,0 +1,5 @@
+{
+  "name": "Sistema de Cadastro Escolar",
+  "description": "Uma interface web para o cadastro amigável de alunos, responsáveis e funcionários, que gera uma planilha para importação em sistemas de banco de dados como o Supabase.",
+  "requestFramePermissions": []
+}
